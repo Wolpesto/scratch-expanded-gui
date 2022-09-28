@@ -19,6 +19,7 @@ const categories = {
     sound: '#CF63CF',
     looks: '#9966FF',
     motion: '#4C97FF',
+    advanced: '#4C97FF',
     list: '#FC662C',
     extension: '#0FBD8C'
 };

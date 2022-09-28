@@ -714,6 +714,34 @@ const myBlocks = function () {
     </category>
     `;
 };
+
+/*CUSTOM*/
+const advanced = function (isInitialSetup, isStage, targetId) {
+    const stageSelected = ScratchBlocks.ScratchMsgs.translate(
+        'ADVANCED_STAGE_SELECTED',
+        'Stage selected: no advanced blocks'
+    );
+    return `
+    <category name="%{BKY_CATEGORY_ADVANCED}" id="advanced" colour="#3fbf9d" secondaryColour="#3cab8d">
+        ${isStage ? `
+        <label text="${stageSelected}"></label>
+        ` : `
+        <block type="advanced_chnagexyto">
+            <value name="STEPS">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+            <value name="STEPY">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>`}
+        ${categorySeparator}
+    </category>
+    `;
+};
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
@@ -760,6 +788,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
     const controlXML = moveCategory('control') || control(isInitialSetup, isStage, targetId);
     const sensingXML = moveCategory('sensing') || sensing(isInitialSetup, isStage, targetId);
     const operatorsXML = moveCategory('operators') || operators(isInitialSetup, isStage, targetId);
+    const advancedXML = moveCategory('advanced') || advanced(isInitialSetup, isStage, targetId);
     const variablesXML = moveCategory('data') || variables(isInitialSetup, isStage, targetId);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId);
 
@@ -772,6 +801,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
         controlXML, gap,
         sensingXML, gap,
         operatorsXML, gap,
+        advancedXML, gap,
         variablesXML, gap,
         myBlocksXML
     ];

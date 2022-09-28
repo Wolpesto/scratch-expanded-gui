@@ -7,7 +7,7 @@
     position: relative;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-right: calc($space / 2);
-    background-color: $ui-secondary;
+    background-color: rgba(59, 89, 128, 1);
     border-top-right-radius: $space;
     border-top-left-radius: $space;
     border-color: $ui-black-transparent;
@@ -35,6 +35,7 @@
     min-width: 4rem;
     min-height: 4rem; /* @todo: calc height same as width */
     margin: calc($space / 2);
+    color: rgba(255, 255, 255, 1);
 }
 
 .sprite {

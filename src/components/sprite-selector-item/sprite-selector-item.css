@@ -10,11 +10,12 @@
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.8rem;
-    color: $text-primary;
+    color: black;
     border-width: 2px;
     border-style: solid;
-    border-color: $ui-black-transparent;
+    border-color: $ui-white;
     border-radius: $space;
+    background: rgba(255, 255, 255, 1);
 
     text-align: center;
     cursor: pointer;
@@ -23,18 +24,18 @@
 }
 
 .sprite-selector-item.is-selected {
-    box-shadow: 0px 0px 0px 4px $motion-transparent;
-    border: 2px solid $motion-primary;
-    background: $ui-white;
+    box-shadow: 0px 0px 0px 4px $ui-white-transparent;
+    border: 2px solid $ui-white;
+    background: rgba(138, 160, 188, 1);
 }
 
 .sprite-selector-item:hover {
-    border: 2px solid $motion-primary;
-    background: $ui-white;
+    border: 2px solid $ui-white;
+    background: rgba(213, 221, 231, 1);
 }
 
 .sprite-selector-item:hover .sprite-image, .is-selected .sprite-image {
-    filter: drop-shadow(0px 0px 2px  $ui-black-transparent);
+    filter: drop-shadow(0px 0px 2px  $ui-white);
 }
 
 /* Outer/Inner chicanery is to prevent layouts when sprite image changes */
@@ -88,8 +89,8 @@
 }
 
 .is-selected .sprite-info {
-    background: $motion-primary;
-    color: $ui-white;
+    background: $ui-white;
+    color: rgba(0, 0, 0, 1);
 }
 
 .delete-button {

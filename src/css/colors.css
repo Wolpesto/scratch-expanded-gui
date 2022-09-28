@@ -1,4 +1,4 @@
-$ui-primary: hsla(215, 100%, 95%, 1); /* #E5F0FF */
+$ui-primary: hsla(214, 36%, 50%, 1); /* #E5F0FF */
 $ui-secondary: hsla(215, 75%, 95%, 1); /* #E9F1FC */
 $ui-tertiary: hsla(215, 50%, 90%, 1); /* #D9E3F2 */
 
@@ -42,3 +42,6 @@ $extensions-transparent: hsla(163, 85%, 40%, 0.35); /* 35% transparent version o
 $extensions-light: hsla(163, 57%, 85%, 1); /* opaque version of extensions-transparent, on white bg */
 
 $drop-highlight: hsla(215, 100%, 77%, 1); /* lighter than motion-primary */
+
+/*CUSTOM*/
+$menu-bar: hsla(209, 47%, 54%, 1); /* #962c84 */

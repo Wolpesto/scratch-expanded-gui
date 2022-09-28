@@ -654,12 +654,12 @@ Blocks.defaultOptions = {
         colour: '#ddd'
     },
     colours: {
-        workspace: '#F9F9F9',
-        flyout: '#F9F9F9',
-        toolbox: '#FFFFFF',
-        toolboxSelected: '#E9EEF2',
-        scrollbar: '#CECDCE',
-        scrollbarHover: '#CECDCE',
+        workspace: '#243443',
+        flyout: '#243953',
+        toolbox: '#3b5980',
+        toolboxSelected: '#4a6b96',
+        scrollbar: '#4a6b96',
+        scrollbarHover: '#4a6b96',
         insertionMarker: '#000000',
         insertionMarkerOpacity: 0.2,
         fieldShadow: 'rgba(255, 255, 255, 0.3)',
