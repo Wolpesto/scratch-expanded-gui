@@ -1,5 +1,7 @@
 import ScratchBlocks from 'scratch-blocks';
 
+import motionIcon from './wolpesto/images/category_motion_icon.svg';
+
 const categorySeparator = '<sep gap="36"/>';
 
 const blockSeparator = '<sep gap="36"/>'; // At default scale, about 28px
@@ -11,7 +13,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
         'Stage selected: no motion blocks'
     );
     return `
-    <category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
+    <category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC" iconURI="${motionIcon}">
         ${isStage ? `
         <label text="${stageSelected}"></label>
         ` : `
