@@ -15,7 +15,7 @@
     border-bottom-right-radius: $space;
 }
 
-[dir="rtl"] .wrapper {
+[dir="rtl"] . {
     border-top-left-radius: $space;
     border-bottom-left-radius: $space;
 }

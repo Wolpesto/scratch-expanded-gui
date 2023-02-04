@@ -74,14 +74,13 @@
     height: 80%;
     margin-bottom: 0;
 
-    border-radius: 1rem 1rem 0 0;
     border: 1px solid $ui-black-transparent;
 
     padding: 0.125rem 1.25rem 0;
     font-size: 0.75rem;
 
     background-color: $ui-tertiary;
-    color: $text-primary-transparent;
+    color: $ui-white;
 
     display: flex;
     justify-content: center;
@@ -124,9 +123,10 @@
 
 .tab.is-selected {
     height: 90%;
-    color: $motion-primary;
-    background-color: $ui-white;
+    color: $ui-white;
+    background-color: #4a6b96;
     z-index: 4; /* Make sure selected is always above */
+    border-radius: 0px;
 }
 
 .tab img {

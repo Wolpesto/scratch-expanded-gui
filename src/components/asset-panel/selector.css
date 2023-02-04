@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgb(117, 157, 209, 1);
+    background: #3b5980;
 }
 
 .new-buttons {
@@ -33,7 +33,7 @@ $fade-out-distance: 100px;
     bottom: 0;
     left: 0;
     right:0;
-    background: linear-gradient(rgba(232,237,241, 0),rgba(232,237,241, 1));
+    background: linear-gradient(rgba(30, 61, 87, 0),rgb(20, 43, 61));
     height: $fade-out-distance;
     width: 100%;
     pointer-events: none;
@@ -48,8 +48,11 @@ $fade-out-distance: 100px;
     height: 0;
     flex-grow: 1;
     overflow-y: scroll;
+    scrollbar-face-color: black;
+    scrollbar-base-color: black;
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 }
 
 .list-area:after {

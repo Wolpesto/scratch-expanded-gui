@@ -35,5 +35,6 @@ export {
     activateTab,
     BLOCKS_TAB_INDEX,
     COSTUMES_TAB_INDEX,
-    SOUNDS_TAB_INDEX
+    SOUNDS_TAB_INDEX,
+    ANIMATIONS_TAB_INDEX
 };
